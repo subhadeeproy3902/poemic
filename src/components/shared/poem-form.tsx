@@ -237,7 +237,7 @@ export function PoemForm() {
         </div>
       </div>
       <div className="relative flex justify-center">
-        <div id="poem-image" className="bg-transparent rounded-md">
+        <div id="poem-image" className="bg-transparent">
           <Image
             src={
               `/poem-bg-${hue}.webp`
@@ -245,7 +245,7 @@ export function PoemForm() {
             alt="Poem Background"
             width={500}
             height={500}
-            className="w-[450px] h-[650px] sm:h-[640px] rounded-md"
+            className="w-[450px] h-[650px] sm:h-[640px]"
           />
           <div
             className={`text-center pt-9 sm:pt-12 px-4 sm:px-8 absolute top-0 w-full sm:w-[450px] h-[640px] ${hue === 1 || hue === 4 ? "text-white" : "text-black"}`}
