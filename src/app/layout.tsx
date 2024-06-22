@@ -9,16 +9,20 @@ export const metadata: Metadata = {
   title: "Poemic",
   description:
     "Share your image, and let's explore what it conveys. Unveil its true meaning through the beauty of verse.",
-    openGraph: {
-      type: 'website',
-      images: [
-        {
-          url: '/215_1x_shots_so.webp',
-          width: 1000,
-          height: 600,
-        },
-      ],
-    },
+  openGraph: {
+    type: 'website',
+    images: [
+      {
+        url: '/215_1x_shots_so.webp',
+        width: 1000,
+        height: 600,
+      },
+    ],
+  },
+  icons: {
+    icon: './favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
