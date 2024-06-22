@@ -248,7 +248,7 @@ export function PoemForm() {
             className="w-[450px] h-[650px] sm:h-[640px] rounded-md"
           />
           <div
-            className={`text-center pt-9 sm:pt-12 px-4 sm:px-8 absolute top-0 sm:w-[450px] h-[640px] ${hue === 1 || hue === 4 ? "text-white" : "text-black"}`}
+            className={`text-center pt-9 sm:pt-12 px-4 sm:px-8 absolute top-0 w-full sm:w-[450px] h-[640px] ${hue === 1 || hue === 4 ? "text-white" : "text-black"}`}
             id="poem-write-up"
           >
             <h2 className="text-3xl mb-6 quinine">
