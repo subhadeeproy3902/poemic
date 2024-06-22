@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/215_1x_shots_so.webp',
+        url: 'https://i.postimg.cc/bN7zKXfg/215-1x-shots-so.webp',
         width: 1000,
         height: 600,
       },
