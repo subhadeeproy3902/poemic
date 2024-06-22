@@ -32,7 +32,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className="opacity-0"
             >
               {
                 // if in the word \n is found, replace it with a line break

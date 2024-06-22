@@ -38,12 +38,12 @@ export function InputBox() {
         try {
           const prompt: string = `Using the provided images and text, write a rhyming poem with the following specifications:
             - Title: Create an engaging title for the poem.
-            - Poem: Write a 4 paragraph poem, each line containing 7-8 words.
+            - Poem: Write a 4 paragraph poem, each line containing 6 to 7 words.
             Key Points:
             - The poem should be engaging and creative.
             - The poem should be rhyming.
             - The poem should be well-structured.
-            - The poem must be of 4 paragraphs, each line containing 7-8 words.
+            - The poem must be of 4 paragraphs, each line containing 6 to 7 words.
             Return the result as a JSON object with the following structure:
             {
               "title": "Your Poem Title",

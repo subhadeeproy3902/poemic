@@ -53,6 +53,9 @@ export function PoemForm() {
       case "orange":
         setHue(2);
         break;
+      case "red":
+        setHue(6);
+        break;
       case "blue":
         setHue(3);
         break;
@@ -177,6 +180,11 @@ export function PoemForm() {
                 />
                 <button
                   type="button"
+                  className="w-6 h-6 rounded-full bg-red-500 hover:ring-2 hover:ring-red-500"
+                  onClick={() => themeChange("red")}
+                />
+                <button
+                  type="button"
                   className="w-6 h-6 rounded-full bg-blue-500 hover:ring-2 hover:ring-blue-500"
                   onClick={() => themeChange("blue")}
                 />
@@ -240,7 +248,7 @@ export function PoemForm() {
             className="w-[450px] h-[650px] sm:h-[640px] rounded-md"
           />
           <div
-            className="text-black text-center pt-9 sm:pt-12 px-4 sm:px-8 absolute top-0 sm:w-[450px] h-[640px]"
+            className={`text-center pt-9 sm:pt-12 px-4 sm:px-8 absolute top-0 sm:w-[450px] h-[640px] ${hue === 1 || hue === 4 ? "text-white" : "text-black"}`}
             id="poem-write-up"
           >
             <h2 className="text-3xl mb-6 quinine">
