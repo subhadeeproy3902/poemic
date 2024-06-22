@@ -6,8 +6,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { Download, MessageCircle, Twitter } from "lucide-react";
+import { Download, MessageCircle, MoveRight, Twitter } from "lucide-react";
 import html2canvas from "html2canvas";
+import Link from "next/link";
 
 export function PoemForm() {
 
@@ -137,6 +138,10 @@ export function PoemForm() {
     window.open(url, '_blank');
   };
 
+  const moveToHome = () => {
+    window.location.href = '/';
+  }
+
 
   return (
     <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2 gap-12 py-10 px-2 md:px-20 w-full">
@@ -214,6 +219,10 @@ export function PoemForm() {
                 onClick={shareToWhatsapp}
               >
                 Whatsapp <MessageCircle size={18} className="ml-2" />
+              </Button>
+
+              <Button onClick={moveToHome} className="bg-blue-500 text-white hover:bg-blue-600">
+                New Poem <MoveRight size={18} className="ml-2" />
               </Button>
             </div>
           </div>

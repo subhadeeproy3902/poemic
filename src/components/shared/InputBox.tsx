@@ -177,7 +177,8 @@ export function InputBox() {
 
       <input
         type="file"
-        accept="image/*"
+        // Accept image files only except webp
+        accept="image/png, image/jpeg, image/jpg"
         ref={inputFileRef}
         className="hidden"
         onChange={
