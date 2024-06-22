@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   title: "Poemic",
   description:
     "Share your image, and let's explore what it conveys. Unveil its true meaning through the beauty of verse.",
+    openGraph: {
+      type: 'website',
+      images: [
+        {
+          url: '/215_1x_shots_so.webp',
+          width: 1000,
+          height: 600,
+        },
+      ],
+    },
 };
 
 export default function RootLayout({

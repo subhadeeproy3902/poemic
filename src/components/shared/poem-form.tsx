@@ -103,7 +103,7 @@ export function PoemForm() {
     if (e.target.value.length > 30) {
       setAuthorNameError('Author name must be less than 30 characters.');
     }
-    else if (e.target.value.length < 3) {
+    else if (e.target.value.length === 0) {
       setAuthorNameError('Author name must be more than 3 characters.');
     }
     else {
