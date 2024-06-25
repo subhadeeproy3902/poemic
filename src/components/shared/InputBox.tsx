@@ -40,6 +40,7 @@ export function InputBox() {
             - Title: Create an engaging title for the poem.
             - Poem: Write a 4 paragraph poem, each line strictly containing 6 to 7 words.
             Key Points:
+            - The title should not be more than 26 character long and more than 5 words.
             - The poem should be engaging and creative.
             - The poem should be rhyming.
             - The poem should be well-structured.
@@ -48,7 +49,7 @@ export function InputBox() {
             {
               "title": "Your Poem Title",
               "poem": "First paragraph of the poem.\nSecond paragraph of the poem.\nThird paragraph of the poem.",
-              "description": "A brief description of the poem in 100 to 150 words."
+              "description": "A brief description of the poem in 150 to 200 words."
             }`;
 
           const poem = await api.generate(prompt + formData.text, formData.images);
